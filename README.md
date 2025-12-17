@@ -7,6 +7,7 @@
 - [X] Decryption
 - [X] Flashing
 - [X] Backup & Restore
+- [X] KernelSU, KernelSU Next & SukiSU Ultra Installer
 - [X] MTP/OTG Storage
 - [X] ADB/FastbootD
 - [X] Factory Reset
@@ -16,7 +17,7 @@
 
 ## Not working
 
-- [ ] KernelSU Next (6.12 kernel not supported yet)
+- [ ] ???????
 
 # How To Build
 
