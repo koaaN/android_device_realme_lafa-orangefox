@@ -34,7 +34,7 @@ cd sync
 cd ~/android/fox_14.1/device
 mkdir -p oneplus
 cd oneplus
-git clone https://github.com/koaaN/android_device_infiniti-orangefox infiniti
+git clone https://github.com/koaaN/android_device_infiniti-orangefox -b R12 infiniti
 ```
 ### BUILD!
 ```
