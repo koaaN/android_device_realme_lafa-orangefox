@@ -1,45 +1,37 @@
-# OnePlus 15 infiniti OrangeFox device tree
+# OrangeFox Recovery for Realme GT8 Pro (`lafa`)
 
-## Working
+Device tree for building OrangeFox Recovery on the Realme GT8 Pro.
 
-- [X] Display
-- [X] Touch 
-- [X] Decryption
-- [X] Flashing
-- [X] Backup & Restore
-- [X] KernelSU, KernelSU Next & SukiSU Ultra Installer
-- [X] MTP/OTG Storage
-- [X] ADB/FastbootD
-- [X] Factory Reset
-- [X] Vibrator
-- [X] Display & Vibration Settings
-- [X] Flashlight
+## Status
 
-## Not working
+Initial bring-up. Device functionality still needs to be tested and verified.
 
-- [ ] ???????
+## How to build
 
-# How To Build
+### Clone and sync the source
 
-### Clone & Sync Source
-```
+```bash
 mkdir -p ~/android/OrangeFox_14
 cd ~/android/OrangeFox_14
 git clone https://gitlab.com/OrangeFox/sync.git
 cd sync
 ./orangefox_sync.sh --branch 14.1 --path ~/android/fox_14.1
 ```
-### Clone Device-tree
-```
+
+### Clone the device tree
+
+```bash
 cd ~/android/fox_14.1/device
-mkdir -p oneplus
-cd oneplus
-git clone https://github.com/koaaN/android_device_infiniti-orangefox -b R12 infiniti
+mkdir -p realme
+cd realme
+git clone https://github.com/koaaN/android_device_realme_lafa-orangefox -b R12 lafa
 ```
-### BUILD!
-```
+
+### Build
+
+```bash
 cd ~/android/fox_14.1
 source build/envsetup.sh
-lunch twrp_infiniti-ap2a-eng
+lunch twrp_lafa-ap2a-eng
 mka adbd recoveryimage
 ```

@@ -27,14 +27,14 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 
-# Inherit from dodge device
-$(call inherit-product, device/oneplus/infiniti/device.mk)
+# Inherit from lafa device
+$(call inherit-product, device/realme/lafa/device.mk)
 
-PRODUCT_DEVICE := infiniti
-PRODUCT_NAME := twrp_infiniti
-PRODUCT_BRAND := oneplus
-PRODUCT_MODEL := OnePlus 15
-PRODUCT_MANUFACTURER := oneplus
+PRODUCT_DEVICE := lafa
+PRODUCT_NAME := twrp_lafa
+PRODUCT_BRAND := realme
+PRODUCT_MODEL := Realme GT8 Pro
+PRODUCT_MANUFACTURER := realme
 
 PRODUCT_GMS_CLIENTID_BASE := android-oplus
 

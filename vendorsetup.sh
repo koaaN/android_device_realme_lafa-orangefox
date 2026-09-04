@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="infiniti"
+FDEVICE="lafa"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
@@ -56,9 +56,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_MISCELLANEOUS_ROOT_DIRECTORY=/sdcard
 	export FOX_ALLOW_EARLY_SETTINGS_LOAD=1
 
-	# For OnePlus 15
-	export TARGET_DEVICE_ALT="PLK110,OP611FL1,OP60FFL1,CPH2745,CPH2747,CPH2749"
-	export FOX_TARGET_DEVICES="$TARGET_DEVICE_ALT"
+	# For Realme GT8 Pro
+	export TARGET_DEVICE_ALT="lafa"
+	export FOX_TARGET_DEVICES="RMX5200,RMX5210,RE6030L1,OP60FFL1"
 	export FOX_ADD_API_V36_PREBUILTS=2
    	export FOX_USE_DMSETUP=1
 	export FOX_ENABLE_KERNELSU_SUPPORT=1

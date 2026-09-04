@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="infiniti">
+<project name="lafa">
 	<version>20250828</version>
 	<device id="0" ic_name="synaptics-s3910">
 		<afelib>libafe_s3910.so</afelib>
